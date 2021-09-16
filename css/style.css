@@ -23,6 +23,8 @@ header {
 }
 .container{
     position: absolute;
+	display: flex;
+	justify-content: right;
 	top: 2rem;
     max-width: 120rem;
 	width: 100%;
@@ -43,11 +45,16 @@ header {
 
 nav{
 	display: flex;
-	justify-content: right;
+	justify-content: space-between;
 	align-items: center;
 	text-transform: uppercase;
 	font-size: 1.4rem;
 	font-weight: 600;
+}
+
+.l-menu{
+	display: grid;
+	grid-template-columns: auto auto;
 }
 
 .phone-mail {
@@ -237,17 +244,15 @@ nav ul li a:hover::after{
 	  opacity: 1;
   }
 }
-.logo-3 {
-    display: grid;
-    position: absolute;
-    z-index: 1;
-    top: 35%;
-    left: 5%;
+.contact-2{
+	position: relative;
 }
 
-.logo-3 img {
-    width: 250px;
-    padding: 2rem;
+.logo-4 {
+    position: absolute;
+    z-index: 1;
+	right: 3%;
+	bottom: 5%;
 }
 
 .contact {
@@ -484,26 +489,41 @@ nav ul li a:hover::after{
 	}
 
 }
-.galleryContainer .slideShowContainer .imageHolder .logo-3 {
-    position: absolute;
+
+/* hero-image */
+.hero-image {
     display: grid;
-    bottom: 25%;
-    left: 5%;
-    z-index: 3;
+    grid-column: auto;
 }
 
-.galleryContainer .slideShowContainer .imageHolder .logo-3 img {
+img {
+    width: 100%;
+}
+
+.contact-2 {
+
+}
+
+.logo-3 {
+    display: grid;
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+    left: 5%;
+}
+
+.logo-3 img {
     width: 250px;
     padding: 2rem;
 }
 
-.galleryContainer .slideShowContainer .imageHolder .contact {
+.contact {
     text-align: center;
     padding-top: 1rem;
 }
 
 
-.galleryContainer .slideShowContainer .imageHolder .contact button {
+.contact button {
     font-family: "Roboto", serif;
     background: #fff;
     border-radius: 15px;
@@ -515,20 +535,10 @@ nav ul li a:hover::after{
     transition: 0.4s linear;
 }
 
-.galleryContainer .slideShowContainer .imageHolder .contact button:hover {
+.contact button:hover {
     color: #fff;
     background-color: var(--primary-color);
 } 
-
-/* hero-image */
-.hero-image {
-    display: grid;
-    grid-column: auto;
-}
-
-img {
-    width: 100%;
-}
 
 /* footer */
 
@@ -542,7 +552,7 @@ img {
 
 .logo {
     grid-area: logo;
-    width: 300px;
+    width: 400px;
     padding: 20px;
 }
 
@@ -561,6 +571,7 @@ img {
 
 .menu ul li a{
     text-decoration: none;
+	font-size: 20px;
     color: #fff;
 }
 
