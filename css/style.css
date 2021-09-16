@@ -278,15 +278,15 @@ nav ul li a:hover::after{
 .slider{
 	position: relative;
 	width: 100%;
+	background: #f4f4f4;
 }
 .myslide{
 	width: 100%;
-	/* overflow: hidden; */
+	overflow: hidden;
 }
 
 .myslide {
 	width: 100%;
-	background-size: contain;
 }
 
 .prev, .next{
