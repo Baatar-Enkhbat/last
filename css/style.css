@@ -23,8 +23,6 @@ header {
 }
 .container{
     position: absolute;
-	display: flex;
-	justify-content: right;
 	top: 2rem;
     max-width: 120rem;
 	width: 100%;
@@ -52,11 +50,6 @@ nav{
 	font-weight: 600;
 }
 
-.l-menu{
-	display: grid;
-	grid-template-columns: auto auto;
-}
-
 .phone-mail {
 	display: flex;
 	width: 150px;
@@ -74,9 +67,11 @@ nav{
 
 nav ul{
 	display: flex;
+	
 }
 
 nav ul li{
+	align-self: center;
 	list-style: none;
 	transform: translateX(100rem);
 	animation: slideIn .5s forwards;

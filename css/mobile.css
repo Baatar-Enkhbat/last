@@ -1,8 +1,7 @@
 @media(max-width: 1010px){
   nav {
     flex-direction: column;
-    justify-content: right;
-    
+    justify-content: right; 
   }
 }
 
@@ -20,7 +19,15 @@
 
 
 @media(max-width: 700px) {
-  
+
+.container{
+  flex-direction: column;
+}
+
+.phone-mail {
+  align-self: center;
+ margin: 30px;
+}
   
 .slider .logo-3 {
   position: absolute;
