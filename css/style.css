@@ -291,7 +291,7 @@ nav ul li a:hover::after{
 	}
 .prev, .next{
 	position: absolute;
-	bottom: 50%;
+	top: 50%;
 	transform: translate(0, -50%);
 	font-size: 50px;
 	padding: 15px;
@@ -497,10 +497,6 @@ nav ul li a:hover::after{
 
 img {
     width: 100%;
-}
-
-.contact-2 {
-
 }
 
 .logo-3 {

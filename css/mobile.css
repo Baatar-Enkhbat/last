@@ -22,6 +22,11 @@
   padding: 0;
 }
 
+.logo-4 .contact button {
+  font-size: 8px;
+  padding: 2px 4px;
+}
+
 .slider .contact button {
   padding: 2px 4px ;
   font-size: 7px;
