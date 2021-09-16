@@ -1,0 +1,92 @@
+@media(max-width: 1010px){
+  nav {
+    flex-direction: column;
+    justify-content: right;
+    
+  }
+}
+
+@media(max-width: 700px) {
+  
+.slider .logo-3 {
+  position: absolute;
+  width: 7px;
+}
+
+.logo-3 img {
+  width: 80px;
+  padding: 0;
+}
+
+.slider .contact button {
+  padding: 2px 4px ;
+  font-size: 7px;
+}
+
+.slider .myslide{
+  height: 30vh;
+  background-size: contain;
+}
+
+.myslide .fade {
+background-size: contain;
+}
+
+.prev, .next{
+  font-size: 15px;
+}
+
+.dot {
+  width: 10px;
+	height: 10px;
+  margin: 0 3px;
+}
+
+iframe {
+height: 300px;
+}
+
+  #footnav {
+    grid-template-areas: 
+    'logo' 
+    'menu' 
+    'loc';
+  }
+  
+  .logo {
+    justify-self: center;
+    width: 200px;
+  }
+  
+  .menu ul {
+    padding-top: 0px;
+  }
+  
+  .menu ul li a{
+    font-size: 12px;
+  }
+  
+  .menu ul li　h2{
+    font-size: 8px;
+  }
+  
+  .loc h1 {
+    font-size: 12px;
+  }
+
+  .navbar ul li {
+      margin: 0 10px;
+  }
+
+  .navbar ul li a {
+      font-size: 0.7rem;
+  }
+
+  .slide-data button {
+      font-size: 1rem;
+  }
+
+  .menu ul li a{
+      font-size: 10px;
+  }
+}
