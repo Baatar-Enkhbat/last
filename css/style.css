@@ -278,6 +278,7 @@ nav ul li a:hover::after{
 .slider{
 	position: relative;
 	width: 100%;
+	height: auto;
 	background: #f4f4f4;
 }
 .myslide{
@@ -285,13 +286,12 @@ nav ul li a:hover::after{
 	overflow: hidden;
 }
 
-.myslide {
-	width: 100%;
-}
-
+.myslide .fade {
+	background-size: contain;
+	}
 .prev, .next{
 	position: absolute;
-	top: 50%;
+	bottom: 50%;
 	transform: translate(0, -50%);
 	font-size: 50px;
 	padding: 15px;
