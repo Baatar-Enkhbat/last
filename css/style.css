@@ -283,7 +283,9 @@ nav ul li a:hover::after{
 
 /* mSlide-start */
 
-
+.wrapper {
+	text-align: center;
+}
 
 .inner {
 	display: flex;
@@ -294,7 +296,7 @@ nav ul li a:hover::after{
 }
 
 .inner img {
-	width: 80%;
+	width: 90%;
 	overflow: none;
 }
 
