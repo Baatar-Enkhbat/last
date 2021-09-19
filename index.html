@@ -36,8 +36,8 @@
       <!-- fade css -->
       <div class="logo-3">
         <img src="img/logo-3.png" alt="">
-        <div class="contact">
-          <button><a href="#"></a>お問い合わせ <i class="fas fa-arrow-circle-right"></i></button>
+        <div class="contact-1">
+          <a href="#">お問い合わせ<i class="fas fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <div class="myslide fade">
@@ -81,26 +81,51 @@
   <section>
     <div class="hero-image">
       <div class="box" id="greeting"><img src="img/photo-1.jpg"></div>
-      <div id="slider">
-        <figure>
-          <img src="img/mSlide-1.jpg">
-          <img src="img/mSlide-2.jpg">
-          <img src="img/mSlide-3.jpg">
-        </figure>
+      <!-- mSlider-start -->
+      <div class="m-container">
+        <div class="img-top">
+          <img src="img/rSlide-home.jpg" alt="">
+        </div>
+        <div class="timeline">
+          <div class="line"></div>
+          <div class="section" style="transition: 900ms ease;">
+            <div class="content">
+              <img src="img/rSlide-1.jpg" alt="" style="width: 94%;">
+            </div>
+          </div>
+
+          <div class="section" style="transition: 1800ms ease;">
+            <div class="content">
+              <img src="img/rSlide-2.jpg" alt="" style="width: 94%;">
+            </div>
+          </div>
+
+          <div class="section" style="transition: 2700ms ease;">
+            <div class="content">
+              <img src="img/rSlide-3.jpg" alt="" style="width: 94%;">
+            </div>
+          </div>
+
+
+        </div>
       </div>
+      <!-- mSlider-end -->
       <div class="box contact-2"><img src="img/photo-3.jpg">
         <div class="logo-4">
-          <div class="contact">
-            <button><a href="#"></a>お問い合わせ <i class="fas fa-arrow-circle-right"></i></button>
+          <div class="contact-2">
+            <a href="#">お問い合わせ <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
       </div>
       <div class="box" id="company"><img src="img/photo-4.jpg"></div>
     </div>
+
+    <!-- map -->
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.3355840392032!2d140.13010061412731!3d35.619452680208774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602284d01b1b86f1%3A0x6ddc0fb5a0258c!2s1589-11%20Takashinach%C5%8D%2C%20Wakaba%20Ward%2C%20Chiba%2C%20264-0024!5e0!3m2!1smn!2sjp!4v1631635096227!5m2!1smn!2sjp"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.33540718593!2d140.13010061430373!3d35.61945704096666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602284d01b1b86f1%3A0x6ddc0fb5a0258c!2z44CSMjY0LTAwMjQg5Y2D6JGJ55yM5Y2D6JGJ5biC6Iul6JGJ5Yy66auY5ZOB55S677yR77yV77yY77yZ4oiS77yR77yR!5e0!3m2!1sja!2sjp!4v1632015769642!5m2!1sja!2sjp"
       width="100%" height="550" style="border:0; padding: 60px; background: #f4f4f4;" allowfullscreen=""
       loading="lazy"></iframe>
+
   </section>
   <footer>
     <div id="footnav">
@@ -134,6 +159,7 @@
   </footer>
 
   <script src="java.js"></script>
+  <script src="timeline.js"></script>
 
 </body>
 
