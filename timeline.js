@@ -1,54 +1,36 @@
+// Trigger CSS animations on scroll.
+// Detailed explanation can be found at http://www.bram.us/2013/11/20/scroll-animations/
 
-"use strict";
+// Looking for a version that also reverses the animation when
+// elements scroll below the fold again?
+// --> Check https://codepen.io/bramus/pen/vKpjNP
 
-function qs(selector, all = false) {
-  return all ? document.querySelectorAll(selector) : document.querySelector(selector);
-}
+jQuery(function ($) {
 
-const sections = qs('.section', true);
-const timeline = qs('.timeline');
-const line = qs('.line');
-line.style.bottom = `calc(50%)`;
-let prevScrollY = window.scrollY;
-let up, down;
-let full = false;
-let set = 0;
-const targetY = window.innerHeight * 0.5;
+  // Function which adds the 'animated' class to any '.animatable' in view
+  var doAnimations = function () {
 
-function scrollHandler(e) {
-  const {
-    scrollY
-  } = window;
-  up = scrollY < prevScrollY;
-  down = !up;
-  const timelineRect = timeline.getBoundingClientRect();
-  const lineRect = line.getBoundingClientRect(); // const lineHeight = lineRect.bottom - lineRect.top;
+    // Calc current offset and get all animatables
+    var offset = $(window).scrollTop() + $(window).height(),
+      $animatables = $('.animatable');
 
-  const dist = targetY - timelineRect.top;
-  console.log(dist);
-
-  if (down && !full) {
-    set = Math.max(set, dist);
-    line.style.bottom = `calc(100% - ${set}px)`;
-  }
-
-  if (dist > timeline.offsetHeight + 50 && !full) {
-    full = true;
-    line.style.bottom = `-50px`;
-  }
-
-  sections.forEach(item => {
-    // console.log(item);
-    const rect = item.getBoundingClientRect(); //     console.log(rect);
-
-    if (rect.top + item.offsetHeight / 5 < targetY) {
-      item.classList.add('show-me');
+    // Unbind scroll handler if we have no animatables
+    if ($animatables.length == 0) {
+      $(window).off('scroll', doAnimations);
     }
-  }); // console.log(up, down);
 
-  prevScrollY = window.scrollY;
-}
+    // Check all animatables and animate them if necessary
+    $animatables.each(function (i) {
+      var $animatable = $(this);
+      if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+        $animatable.removeClass('animatable').addClass('animated');
+      }
+    });
 
-scrollHandler();
-line.style.display = 'block';
-window.addEventListener('scroll', scrollHandler);
+  };
+
+  // Hook doAnimations on scroll, and trigger a scroll
+  $(window).on('scroll', doAnimations);
+  $(window).trigger('scroll');
+
+});
