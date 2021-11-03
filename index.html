@@ -1,152 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="jp">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/x-icon" href="favicon.png">
-<link rel="stylesheet" href="css/mobile.css">
-<title>House Concierge | ハウスコンシェルジュ</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8053d09693.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>ひらい | HIRAI</title>
+</head>
 
 <body>
-  <header>
-    <div class="menu-toggle" id="hamburger">
-      <i class="fas fa-bars"></i>
-    </div>
-    <div class="overlay"></div>
-    <div class="container">
-      <nav>
-        <h1 class="brand"><a href="index.html"><span>Ho</span>u<span>se</span><br>Conc<span>i</span>erge</a></h1>
-        <ul>
-          <li><a class="current" href="#">トップ</a></li>
-          <li><a href="#greeting">ご挨拶</a></li>
-          <li><a href="#">不動産売却</a></li>
-          <li><a href="#company">会社概要</a></li>
-          <div class="phone-mail">
-            <a href="#"><img src="img/mail.png" alt=""></a>
-            <a href="#"><img src="img/phone.png" alt=""></a>
-          </div>
-        </ul>
-      </nav>
-    </div>
+    <!-- header-start -->
+    <header-top>
+        <div class="container">
+            <div class="top-background">
+                <img src="img/top-background.jpg" alt="">
+            </div>
+            <div class="navbar">
+                <div class="cont">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <ul>
+                        <li class="borderTop"><a href="#"><i class="fas fa-chevron-circle-right"></i> NEWS</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-circle-right"></i> 会社概要</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-circle-right"></i> 事業内容</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-circle-right"></i> ひらいの強み</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-circle-right"></i> 採用情報</a></li>
+                    </ul>
+                    <div class="menu2">
+                        <a href="#">/ 品質管理</a>
+                        <a href="#">/ アフターメンテナンス</a>
+                        <a href="#">/ 木青</a>
+                        <a href="#">/ SDGS</a>
+                        <a href="#">/ 個人向け商品</a>
+                    </div>
+                    <div class="menu3">
+                        <div class="menu3-1">
 
-    <div class="slider">
-      <!-- fade css -->
-      <div class="logo-3">
-        <img src="img/logo-3.png" alt="">
-        <div class="contact-1">
-          <a href="#">お問い合わせ<i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="#"><i class="fas fa-chevron-circle-down"></i>予約する</a>
+                        </div>
+                        <div class="menu3-1 borderRight">
+                            <a href="#"><i class="fas fa-map-marker-alt"></i>アクセス</a>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <a href="#">お問い合わせ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-2">
+                <a href="#">お問い合わせ</a>
+            </div>
+            <div class="social-icon">
+                <a href="#"><img src="img/line.png" alt=""></a>
+                <a href="#"><img src="img/fb.png" alt=""></a>
+                <a href="#"><img src="img/tr.png" alt=""></a>
+                <a href="#"><img src="img/ist.png" alt=""></a>
+            </div>
+            <div class="video-btn">
+                <a href="#"><img src="img/video.jpg" alt=""></a>
+            </div>
+            <div class="view-all">
+                <a href="#">VIEW ALL &nbsp &nbsp<i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="skip">
+                <a href="#"><img src="img/skip.jpg" alt=""></a>
+            </div>
         </div>
-      </div>
-      <div class="myslide fade">
+    </header-top>
+    <!-- header-end -->
+    <!-- mid-start -->
+    <section>
+        <div class="mid-container">
 
-        <img src="img/IMG-1.jpg" style="width: 100%;">
-      </div>
-
-      <div class="myslide fade">
-
-        <img src="img/IMG-2.JPG" style="width: 100%;">
-      </div>
-
-      <div class="myslide fade">
-
-        <img src="img/IMG-3.JPG" style="width: 100%;">
-      </div>
-
-      <div class="myslide fade">
-
-        <img src="img/IMG-4.jpg" style="width: 100%;">
-      </div>
-
-
-      <!-- /fade css -->
-
-      <!-- onclick js -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-      <div class="dotsbox" style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
-      <!-- /onclick js -->
-    </div>
-
-
-  </header>
-  <section>
-    <div class="hero-image">
-      <div class="box" id="greeting"><img src="img/photo-1.jpg"></div>
-
-      <!-- mSlider-start -->
-      <!-- partial:index.partial.html -->
-      <div class="wrapper">
-        <img src="img/rSlide-home.jpg" alt="" style="width: 95%;">
-        <div class="inner">
-          <div class="block animatable bounceInLeft "><img src="img/rSlide-1.jpg" alt=""></div>
-          <div class="block animatable fadeInDown"><img src="img/rSlide-2.jpg" alt=""></div>
-          <div class="block animatable bounceInRight"><img src="img/rSlide-3.jpg" alt=""></div>
+            <div class="mid-background">
+                <img src="img/mid-background.jpg" alt="">
+            </div>
+            <div class="mid-images">
+                <div class="mid-img"><a href=""><img src="img/mid-1.jpg" alt=""></a></div>
+                <div class="mid-img"><a href=""><img src="img/mid-2.jpg" alt=""></a></div>
+                <div class="mid-img"><a href=""><img src="img/mid-3.jpg" alt=""></a></div>
+                <div class="mid-img"><a href=""><img src="img/mid-4.jpg" alt=""></a></div>
+                <div class="mid-img"><a href=""><img src="img/mid-5.jpg" alt=""></a></div>
+                <div class="mid-img"><a href=""><img src="img/mid-6.jpg" alt=""></a></div>
+            </div>
         </div>
-        <!-- partial -->
-        <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
-        <script src="./script.js"></script>
-      </div>
-      <!-- mSlider-end -->
-      <div class="box contact-2"><img src="img/photo-3.jpg">
-        <div class="logo-4">
-          <div class="contact-2">
-            <a href="#">お問い合わせ <i class="fas fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="box" id="company"><img src="img/photo-4.jpg"></div>
-    </div>
-
-    <!-- map -->
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.33540718593!2d140.13010061430373!3d35.61945704096666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602284d01b1b86f1%3A0x6ddc0fb5a0258c!2z44CSMjY0LTAwMjQg5Y2D6JGJ55yM5Y2D6JGJ5biC6Iul6JGJ5Yy66auY5ZOB55S677yR77yV77yY77yZ4oiS77yR77yR!5e0!3m2!1sja!2sjp!4v1632015769642!5m2!1sja!2sjp"
-      width="100%" height="550" style="border:0; padding: 60px; background: #f4f4f4;" allowfullscreen=""
-      loading="lazy"></iframe>
-
-  </section>
-  <footer>
-    <div id="footnav">
-      <div class="logo">
-        <img src="img/logo.png" alt="">
-      </div>
-
-      <div class="menu">
-        <ul>
-          <li><a href="#">トップ</a>
-            <h2>home</h2>
-          </li>
-          <li><a href="#greeting">ご挨拶</a>
-            <h2>Company Profile</h2>
-          </li>
-          <li><a href="#">不動産売却</a>
-            <h2>CIC transfer</h2>
-          </li>
-          <li><a href="#company">会社概要</a>
-            <h2>JICC transfer</h2>
-          </li>
-        </ul>
-
-        <div class="loc">
-          <h1>千葉市若葉区高品町1589-11 　TEL／043-497-2977 　FAX／043-497-2978</h1>
-        </div>
-
-      </div>
-    </div>
-    <h3>Copyright(C) 2021Landest. All Rights Reserved</h3>
-  </footer>
-
-  <script src="java.js"></script>
-  <script src="timeline.js"></script>
-
+    </section>
+    <!-- mid-end -->
 </body>
 
 </html>
