@@ -42,16 +42,13 @@ header-top{
     font-size: 0;
 }
 
-.container{
-    max-width: 1300px;
-}
-
 .top-background img{
     background-size: cover;
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
 }
 
 .navbar{
@@ -365,6 +362,10 @@ a:hover{
     color: var(--font-color-foot);
 }
 
+.footer-menu ul li a:hover{
+    color: #a1af77;
+}
+
 .borderL{
     padding: 0 20px;
     border-left: 1px solid var(--font-color-foot);
@@ -377,9 +378,13 @@ a:hover{
 
 
 .border{
-    padding: 0 20px;
+    padding: 2px 20px;
     margin-left: 10px;
     border: 1px solid var(--font-color-foot);
+}
+
+.border:hover{
+    background-color: var(--font-color-foot);
 }
 
 .zai {
@@ -404,6 +409,10 @@ a:hover{
     font-size: 0.6rem;
 }
 
+.footer-menu3 ul li a:hover{
+    color: #a1af77;
+}
+
 .top-to{
     grid-area: foot;
 }
@@ -413,6 +422,7 @@ a:hover{
 }
 
 .copyRight{
+    margin-top: 1rem;
     text-align: center;
     background: #a8a8a8;
     padding: 1rem;
