@@ -38,6 +38,7 @@
 /* header-start */
 
 header-top{
+    width: 100%;
     font-family: 'pl';
     font-size: 0;
 }
@@ -275,15 +276,16 @@ a:hover{
     top: 0;
     right: 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 21%);
     grid-gap: 3rem;
     grid-row-gap: 6rem;
-    justify-content: center;
-    padding: 6rem 4rem;
+    justify-content: right;
+    text-align: right;
+    padding: 8rem 4rem;
 }
 
 .mid-container .mid-images2 img{
-    width: 240px;
+    width: 100%;
 }
 
 .mid-image3{
