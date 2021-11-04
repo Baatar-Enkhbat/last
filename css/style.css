@@ -222,7 +222,7 @@ a:hover{
 .view-all{
     position: absolute;
     right: 40%;
-    top: 222%;
+    top: 220%;
 }
 .view-all a{
     color: var(--font-color);
@@ -244,6 +244,7 @@ a:hover{
 .mid-container{
     position: relative;
     font-size: 0;
+    width: 100%;
 }
 .mid-container .mid-background img{
     position: relative;
@@ -257,6 +258,7 @@ a:hover{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3rem;
+    justify-content: center;
     padding: 4rem;
 }
 
@@ -276,6 +278,7 @@ a:hover{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
     grid-row-gap: 6rem;
+    justify-content: center;
     padding: 6rem 4rem;
 }
 
