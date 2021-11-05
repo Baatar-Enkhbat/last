@@ -240,3 +240,36 @@ header-top .container .navbar .menu2 a:hover{
     color: var(--light-color);
     background-color: var(--font-color);
 }
+
+/* header-end */
+
+/* mid-start */
+section{
+    position: relative;
+}
+.mid-container{
+    position: relative;
+    background: url('../img/mid-background.jpg') no-repeat center right / cover;
+    width: 100%;
+    height: 200vh;
+}
+
+.mid-container .mid-images{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.mid-container .mid-images img{
+    width: 350px;
+}
+
+.mid-container .mid-images img:hover{
+    opacity: 0.8;
+}
+/* mid-end */
