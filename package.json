@@ -1,11 +1,12 @@
 {
-  "name": "tailwindcss",
+  "name": "hirai",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "postcss css/tailwind.css -o dist/css/style.css"
+    "build": "postcss css/tailwind.css -o dist/css/styles.css",
+    "watch": "postcss css/tailwind.css -o dist/css/styles.css --watch"
   },
   "keywords": [],
   "author": "",
