@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
 
 <head>
     <meta charset="UTF-8">
@@ -72,7 +72,7 @@
             </div>
             <div class="grid w-40 text-xs 2xl:text-lg">
                 <a class="p-3 border-t border-black hover:text-primary-color" href="#"><i
-                        class="fas fa-chevron-circle-right"></i> NEWS</a>
+                        class="fas fa-chevron-circle-right"></i> NEWSs</a>
                 <a class="p-3 border-t border-black hover:text-primary-color" href="#"><i
                         class="fas fa-chevron-circle-right"></i> 会社概要</a>
                 <a class="p-3 border-t border-black hover:text-primary-color" href="#"><i
@@ -205,7 +205,16 @@
         </p>
     </div>
     <!-- footer-end -->
-    <script src="../script.js"></script>
+    <script>
+
+        const btn = document.querySelector(".mobile-menu-button");
+        const sidebar = document.querySelector(".sidebar");
+
+
+        btn.addEventListener("click", () => {
+            sidebar.classList.toggle("-translate-x-full");
+        });
+    </script>
 </body>
 
 </html>
