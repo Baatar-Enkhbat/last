@@ -13,16 +13,16 @@
 
 <body>
     <!-- hamburger-start -->
-    <div class="fixed top-0 z-10 w-full 2xl:hidden md:flex">
+    <div class="fixed top-0 z-10 w-full lg:hidden 2xl:hidden lg::flex">
 
         <!-- mobile menu bar -->
-        <div class="flex justify-between text-primary-color hover:text-white md:hidden">
+        <div class="flex justify-between text-primary-color hover:text-white lg:hidden">
             <!-- logo -->
-            <a href="#" class="block w-24 pl-3"><img src="img/logo-nav.png" alt=""></a>
+            <a href="#" class="block w-24 pl-3 sm:w-36 md:w-44"><img src="img/logo-nav.png" alt=""></a>
 
             <!-- mobile menu button -->
             <button class="p-4 mobile-menu-button focus:outline-none ">
-                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                <svg class="w-5 h-5 sm:w-8 sm:h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
@@ -32,11 +32,11 @@
         <!-- sidebar -->
 
         <div
-            class="absolute inset-y-0 left-0 w-64 px-2 text-blue-100 transition duration-200 ease-in-out transform -translate-x-full sidebar pb-72 md:relative md:translate-x-0">
+            class="absolute inset-y-0 left-0 w-64 px-2 text-blue-100 transition duration-200 ease-in-out transform -translate-x-full sidebar pb-72 lg:relative lg:translate-x-0">
 
             <!-- logo -->
             <a href="#" class="flex items-center px-4 pt-5 space-x-2 bg-white text-primary-color">
-                <img class="w-10" src="img/logo-bot.png" alt="">
+                <img class="w-10 sm:" src="img/logo-bot.png" alt="">
             </a>
 
             <!-- nav -->
@@ -90,11 +90,12 @@
     <!-- heaser-start -->
     <header class="relative w-full " id="top">
         <img src="img/top-background.jpg" alt="">
-        <div class="absolute bottom-0 hidden p-5 py-10 bg-white 2xl:block w-60 2xl:bottom-72">
+        <div
+            class="absolute bottom-0 hidden p-5 py-10 bg-white lg:py-6 lg:block lg:bottom-40 2xl:block w-60 lg:w-52 2xl:bottom-72">
             <div class="mb-10">
-                <img class="w-20" src="img/logo.png" alt="">
+                <img class="w-20 lg:w-16" src="img/logo.png" alt="">
             </div>
-            <div class="grid w-40 text-xs 2xl:text-lg">
+            <div class="grid w-40 text-xs lg:w-28 2xl:text-lg">
                 <a class="p-3 border-t border-black hover:text-primary-color" href="#"><i
                         class="fas fa-chevron-circle-right"></i> NEWS</a>
                 <a class="p-3 border-t border-black hover:text-primary-color" href="#"><i
@@ -108,29 +109,29 @@
                         class="fas fa-chevron-circle-right"></i>
                     採用情報</a>
             </div>
-            <div class="grid pt-5 text-base">
+            <div class="grid pt-5 text-base lg:text-xs">
                 <a class="p-2 hover:text-primary-color" href="#">/ 品質管理</a>
                 <a class="p-2 hover:text-primary-color" href="#">/ アフターメンテナンス</a>
                 <a class="p-2 hover:text-primary-color" href="#">/ 木育</a>
                 <a class="p-2 hover:text-primary-color" href="#">/ SDGS</a>
                 <a class="p-2 hover:text-primary-color" href="#">/ 個人向け商品</a>
             </div>
-            <div class="flex p-2 text-base text-gray-400">
+            <div class="flex p-2 text-base text-gray-400 lg:text-xs">
                 <a class="grid px-2 text-center border-l-2 border-gray-400 hover:text-primary-color" href=""><i
                         class="fas fa-chevron-circle-down"></i>予約する</a>
                 <a class="grid px-2 text-center border-l-2 border-r-2 border-gray-400 hover:text-primary-color"
                     href=""><i class="fas fa-map-marker-alt"></i>アクセス</a>
             </div>
             <div class="pt-3 pl-2.5">
-                <a class="px-8 py-3 text-white transition duration-200 ease-in bg-gray-800 hover:bg-primary-color hover:text-gray-800"
+                <a class="px-8 py-3 text-white transition duration-200 ease-in bg-gray-800 lg:text-xs hover:bg-primary-color hover:text-gray-800"
                     href="#">お問い合わせ</a>
             </div>
         </div>
-        <div class="absolute top-0 pl-2 right-14 2xl:right-28">
-            <a class="px-2 py-2 text-xs text-white transition duration-300 ease-in 2xl:text-sm 2xl:py-4 2xl:px-9 bg-primary-color hover:text-primary-color hover:bg-white rounded-b-2xl"
+        <div class="fixed top-0 z-10 pl-2 right-14 sm:right-24 2xl:right-28">
+            <a class="px-2 py-2 text-xs text-white transition duration-300 ease-in sm:px-3 sm:py-3 2xl:text-sm 2xl:py-4 2xl:px-9 bg-primary-color hover:text-primary-color hover:bg-white rounded-b-2xl"
                 href="#">お問い合わせ</a>
         </div>
-        <div class="fixed right-0 z-50 w-8 p-1 bg-white 2xl:w-14 top-20 2xl:top-44">
+        <div class="fixed right-0 z-50 w-8 p-1 bg-white sm:w-10 2xl:w-14 top-20 2xl:top-44">
             <div class="p-1"><a href="#"><img
                         class="overflow-hidden transition duration-100 ease-in transform hover:rotate-45"
                         src="img/line.png" alt=""></a></div>
@@ -146,14 +147,14 @@
                         src="img/ist.png" alt=""></a>
             </div>
         </div>
-        <div class="absolute hover:opacity-80 right-8 bottom-2.5/10 2xl:bottom-2.8/10 w-24 2xl:w-72">
+        <div class="absolute hover:opacity-80 right-8 bottom-2.5/10 lg:w-64 2xl:bottom-2.8/10 w-24 sm:w-40 2xl:w-72">
             <a href="#"><img src="img/video.jpg" alt=""></a>
         </div>
-        <div class="absolute right-0 w-20 2xl:w-52 hover:opacity-70 top-5.5/10">
+        <div class="absolute right-0 w-20 2xl:w-52 sm:w-28 lg:w-48 hover:opacity-70 top-5.5/10">
             <a href="#"><img src="img/skip.jpg" alt=""></a>
         </div>
-        <div class="absolute left-2/4 bottom-2 2xl:bottom-10">
-            <a class="px-2 py-1 text-xs text-center text-gray-800 transition duration-200 ease-in bg-white 2xl:text-sm 2xl:px-8 2xl:py-4 hover:bg-gray-800 hover:text-white"
+        <div class="absolute left-2/4 bottom-2 2xl:bottom-10 lg:bottom-8 sm:bottom-5">
+            <a class="px-2 py-1 text-xs text-center text-gray-800 transition duration-200 ease-in bg-white lg:py-3 lg:px-4 sm:px3 sm:py-2 2xl:text-sm 2xl:px-8 2xl:py-4 hover:bg-gray-800 hover:text-white"
                 href="#">VIEW ALL
                 &nbsp &nbsp<i class="fas fa-chevron-right"></i></a>
         </div>
@@ -185,7 +186,8 @@
         </div>
     </div>
     <div class="relative w-full h-full">
-        <div class="relative grid justify-center grid-cols-6 gap-2 p-10 2xl:p-32 2xl:px-60 2xl:gap-x-10 2xl:gap-y-32">
+        <div
+            class="relative grid justify-center grid-cols-6 gap-2 p-10 md:px-20 md:gap-5 lg:px-30 2xl:p-32 2xl:px-60 2xl:gap-x-10 2xl:gap-y-32">
             <a class="w-full col-span-6" href="#"><img src="img/mid-img1.jpg" alt=""></a>
             <a class="w-full col-span-3" href="#"><img src="img/mid-img2.jpg" alt=""></a>
             <a class="w-full col-span-3" href="#"><img src="img/mid-img3.jpg" alt=""></a>
@@ -199,28 +201,35 @@
     <!-- footer-start -->
     <div class="w-full">
         <div
-            class="relative grid justify-center grid-cols-1 px-5 text-center text-gray-500 2xl:text-left 2xl:flex 2xl:px-60">
+            class="relative grid justify-center grid-cols-1 px-5 text-center text-gray-500 md:px-20 lg:text-left lg:flex lg:px-30 2xl:text-left 2xl:flex 2xl:px-60">
 
-            <div class="grid justify-center w-full mb-4 2xl:w-1/12"><img class="w-16" src="img/logo-bot.png" alt="">
+            <div class="grid justify-center w-full mb-4 lg:w-1/12 2xl:w-1/12"><img class="w-16" src="img/logo-bot.png"
+                    alt="">
             </div>
 
-            <div class="grid grid-cols-6 gap-1 px-0 text-xs 2xl:block 2xl:px-16">
-                <a class="col-span-2 px-5 border-l border-gray-500 hover:text-blue-600" href="#">NEWS</a>
-                <a class="col-span-2 px-5 border-l border-gray-500 hover:text-blue-600" href="#">会社概要</a>
-                <a class="col-span-2 px-5 border-l border-gray-500 :sm:border-r hover:text-blue-600" href="#">事業内容</a>
-                <a class="col-span-6 px-5 border-l border-r border-gray-500 hover:text-blue-600" href="#">ひらいの強み</a>
-                <a class="col-span-3 ml-6 border border-gray-500 px-7 hover:text-blue-600" href="#">採用情報</a>
-                <a class="col-span-3 px-5 ml-2 border border-gray-500 hover:text-blue-600" href="#">お問い合わせ</a>
-                <br class="hidden 2xl:block 2xl:m-3">
+            <div
+                class="grid grid-cols-6 gap-1 px-0 text-xs md:grid md:grid-cols-4 sm:text-sm lg:block 2xl:block 2xl:px-16">
+                <a class="col-span-2 px-5 border-l border-gray-500 md:col-span-1 hover:text-blue-600" href="#">NEWS</a>
+                <a class="col-span-2 px-5 border-l border-gray-500 md:col-span-1 hover:text-blue-600" href="#">会社概要</a>
+                <a class="col-span-2 px-5 border-l border-gray-500 md:col-span-1 :sm:border-r hover:text-blue-600"
+                    href="#">事業内容</a>
+                <a class="col-span-6 px-5 border-l border-r border-gray-500 md:col-span-1 hover:text-blue-600"
+                    href="#">ひらいの強み</a>
+                <a class="col-span-3 ml-6 border border-gray-500 md:mt-4 md:col-span-2 px-7 hover:text-blue-600"
+                    href="#">採用情報</a>
+                <a class="col-span-3 px-5 ml-2 border border-gray-500 md:mt-4 md:col-span-2 hover:text-blue-600"
+                    href="#">お問い合わせ</a>
+                <br class="hidden 2xl:block 2xl:m-3 lg:block lg:m-2">
 
-                <a class="col-span-2 p-5 hover:text-blue-600" href="#">/　品質管理</a>
-                <a class="col-span-4 p-5 hover:text-blue-600" href="#">/　アフターメンテナンス</a>
-                <a class="col-span-2 p-5 hover:text-blue-600" href="#">/　木育</a>
+                <a class="col-span-2 p-5 md:col-span-1 hover:text-blue-600" href="#">/　品質管理</a>
+                <a class="col-span-4 p-5 md:col-span-2 hover:text-blue-600" href="#">/　アフターメンテナンス</a>
+                <a class="col-span-2 p-5 md:col-span-1 hover:text-blue-600" href="#">/　木育</a>
                 <a class="col-span-2 p-5 hover:text-blue-600" href="#">/　SDGS</a>
                 <a class="col-span-2 p-5 hover:text-blue-600" href="#">/　個人向け商品</a>
             </div>
 
-            <div class="hidden w-16 mt-4 ml-10 2xl:block"><a href="#top"><img src="img/top-to.jpg" alt=""></a></div>
+            <div class="hidden w-16 mt-4 ml-10 lg:block 2xl:block"><a href="#top"><img src="img/top-to.jpg" alt=""></a>
+            </div>
 
         </div>
     </div>
